@@ -1,10 +1,14 @@
 <?php
+
+// all includes
 require_once '../include/functions.inc.php';
 require_once '../templates/db-connect.php';
 require_once '../functions/json.func.php';
 require_once "../include/matchFunctions.inc.php";
 require_once "../functions/scoring.func.php";
 require_once "../functions/cmdLine.func.php";
+// -------------------------------------
+
 
 if (isset($_POST['submit'])) {
   $data = getAllPairData($conn);
